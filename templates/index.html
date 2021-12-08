@@ -1,6 +1,13 @@
 <html>
     <body>
         <h1>Hi</h1>
+        {% if created %}
+        <h3>Site is using new session (ID => :{{created}} )</h3>
+        {% endif%}
+
+        {% if previous %}
+        <h3>Site is using Already Created Session (ID =>: {{previous}} )</h3>
+        {% endif%}
     </body>
     
     </html>
